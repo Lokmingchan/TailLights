@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Tail Lights";
+}
+<input type="hidden" id="lightState" value="off" />
+<div class="row">
+    <div class="col-md-1">
+        <div class="circle leftInd leftInd3"></div>
+    </div>
+    <div class="col-md-1">
+        <div class="circle leftInd leftInd2"></div>
+    </div>
+    <div class="col-md-1">
+        <div class="circle leftInd leftInd1"></div>
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-1">
+        <div class="circle rightInd rightInd1"></div>
+    </div>
+    <div class="col-md-1">
+        <div class="circle rightInd rightInd2"></div>
+    </div>
+    <div class="col-md-1">
+        <div class="circle rightInd rightInd3"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-1">
+        <button id="leftTurnInd" onclick="leftTurnInd();">Turn Left</button>
+    </div>
+    <div class="col-md-8"></div>
+    <div class="col-md-1">
+        <button id="rightTurnInd" onclick="rightTurnInd();">Turn Right</button>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-2">
+        <button id="brake" onmousedown="hitBrake();" onmouseup="releaseBrake();" onmouseleave="releaseBrake();">Hit Brake</button>
+    </div>
+    <div class="col-md-5"></div>
+</div>
+<div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-2">
+        <button id="hazards" onclick="hitHazards();">Toggle Hazards</button>
+    </div>
+    <div class="col-md-5"></div>
+</div>
+<div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-2">
+        <button id="hazards" onclick="startupSequence();">Startup Sequence</button>
+    </div>
+    <div class="col-md-5"></div>
+</div>
